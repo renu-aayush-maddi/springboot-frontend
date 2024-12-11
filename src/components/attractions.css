@@ -1,0 +1,397 @@
+/* Controls Section */
+.controls-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  
+  .attraction-dropdown,
+  .search-bar {
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .attraction-dropdown {
+    width: 200px;
+  }
+  
+  .search-bar {
+	width: 300px;
+	padding: 10px;
+	border: 2px solid #ccc;
+	border-radius: 20px;
+	font-size: 16px;
+	outline: none;
+	transition: border-color 0.3s ease, box-shadow 0.3s ease;
+	background-color: #f9f9f9;
+  }
+  
+  .search-bar:focus {
+	border-color: dodgerblue;
+	box-shadow: 0 0 8px rgba(30, 144, 255, 0.5);
+  }
+  
+  .search-container {
+	display: flex;
+	justify-content: center;
+	
+	margin-top: 50px; /* Optional: Adjust top margin for positioning */
+  }
+  
+  
+  
+  /* Attractions Display Section */
+  .attractions-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px;
+  }
+  
+  .attraction-card {
+    width: 360px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .attraction-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  h3 {
+    font-size: 1.5em;
+    margin-top: 15px;
+    color: #333;
+  }
+  
+  p {
+    font-size: 1em;
+    color: #555;
+  }
+  
+  /* Pagination Section */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .pagination button {
+    padding: 10px 15px;
+    margin: 0 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .pagination button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .pagination button:disabled {
+    background-color: #f0f0f0;
+    cursor: not-allowed;
+  }
+  
+  .pagination span {
+    font-size: 1em;
+    color: #555;
+  }
+  
+
+  .t{
+    color: black;
+  }
+
+
+
+
+
+  *,
+*::before,
+*::after{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+.container{
+	width: 100%;
+	background: #f5f4f6;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 100px 0px;
+}
+
+.list-container{
+	width: 800px;
+	text-align: center;
+}
+
+.card{
+	height: 95px;
+	width: 100%;
+	background: white;
+	margin-top: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	display: flex;
+	overflow: hidden;
+	transition: 0.3s;
+}
+
+h2{
+	padding-bottom: 14px;
+}
+
+.content-container{
+	width: 80%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.game-image1{
+	width: 70px;
+	height: 70px;
+	margin-left: 10px;
+	background-image: url("./imgs/i1.jpg");
+	background-position: center;
+	background-size: cover;
+	border-radius: 5px;
+}
+
+.game-image2{
+	width: 70px;
+	height: 70px;
+	margin-left: 10px;
+	background-image: url("./imgs/i2.jpeg");
+	background-position: center;
+	background-size: cover;
+	border-radius: 5px;
+}
+
+.game-image3{
+	width: 70px;
+	height: 70px;
+	margin-left: 10px;
+	background-image: url("./imgs/i3.jpeg");
+	background-position: center;
+	background-size: cover;
+	border-radius: 5px;
+}
+.game-image4{
+	width: 70px;
+	height: 70px;
+	margin-left: 10px;
+	background-image: url("./imgs/i4.jpeg");
+	background-position: center;
+	background-size: cover;
+	border-radius: 5px;
+}
+.game-image5{
+	width: 70px;
+	height: 70px;
+	margin-left: 10px;
+	background-image: url("./imgs/i5.jpeg");
+	background-position: center;
+	background-size: cover;
+	border-radius: 5px;
+}
+.game-image6{
+	width: 70px;
+	height: 70px;
+	margin-left: 10px;
+	background-image: url("./imgs/i6.jpeg");
+	background-position: center;
+	background-size: cover;
+	border-radius: 5px;
+}
+.game-image7{
+	width: 70px;
+	height: 70px;
+	margin-left: 10px;
+	background-image: url("./imgs/i7.jpeg");
+	background-position: center;
+	background-size: cover;
+	border-radius: 5px;
+}
+.game-image8{
+	width: 70px;
+	height: 70px;
+	margin-left: 10px;
+	background-image: url("./imgs/i8.jpeg");
+	background-position: center;
+	background-size: cover;
+	border-radius: 5px;
+}
+.game-image9{
+	width: 70px;
+	height: 70px;
+	margin-left: 10px;
+	background-image: url("./imgs/i9.jpeg");
+	background-position: center;
+	background-size: cover;
+	border-radius: 5px;
+}
+.game-image10{
+	width: 70px;
+	height: 70px;
+	margin-left: 10px;
+	background-image: url("./imgs/10.jpeg");
+	background-position: center;
+	background-size: cover;
+	border-radius: 5px;
+}
+
+.game-name{
+	margin-left: 30px;
+	font-size: 20px;
+}
+
+.image{
+	width: 100%;
+	height: 100%;
+}
+
+.rating{
+	transition: 0.5s; 
+	width: 20%;
+	display: flex;
+	align-items:center;
+	justify-content: center;
+	transform: translateX(100px);
+}
+
+.card:hover .rating{
+	transform: translateX(0px);
+}
+
+.list-container:hover .card{
+	filter: blur(5px);
+	opacity: 0.5;
+}
+
+/*transform: scale(1.1);  is used to incrase to size of div */
+/*filter: blur(5px); is used to blur div tag */
+.list-container .card:hover{
+	transform: scale(1.1);
+	filter: blur(0px);
+	opacity: 1;
+}
+
+
+
+
+
+
+#accordion {
+	margin: 100px auto;
+	width: 600px;
+  }
+  
+  #accordion li {
+	list-style: none;
+	width: 100%;
+	margin-bottom: 10px;
+	background: #fff;
+	padding: 10px;
+  }
+  
+  #accordion li label {
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 18px;
+	font-weight: 500;
+	color: dodgerblue;
+	cursor: pointer;
+  }
+  
+  #accordion li label span {
+	transform: rotate(90deg);
+	font-size: 22px;
+	color: dodgerblue;
+  }
+  
+  #accordion label + input[type="radio"] {
+	display: none;
+  }
+  
+  #accordion .content {
+	padding: 0 10px;
+	line-height: 26px;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.5s;
+  }
+  
+  #accordion label + input[type="radio"]:checked + .content {
+	max-height: 400px;
+  }
+
+  .title-p{
+	display: flex;
+	align-items: center;
+	margin-left: 35rem;
+	margin-top: 50px;
+	font-size: 30px;
+	font-style: oblique;
+	
+  }
+
+  .full{
+	background: linear-gradient(267deg, #B923E1 0.36%, #25d1da 102.06%);
+  }
+  .container{
+	background: linear-gradient(267deg, #B923E1 0.36%, #DA7C25 102.06%);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Button styles */
+.buttonn {
+	background-color: #4CAF50; /* Green background */
+	color: rgb(208, 41, 41); /* White text */
+	border: none; /* Remove border */
+	padding: 10px 20px; /* Padding */
+	font-size: 16px; /* Font size */
+	border-radius: 50%;
+	cursor: pointer; /* Pointer cursor */
+	border-radius: 5px; /* Rounded corners */
+	transition: all 0.3s ease; /* Transition for smooth animation */
+  }
+  
+  /* Hover effect */
+  .buttonn:hover {
+	background-color: #45a049; /* Darker green when hovered */
+	transform: scale(1.1); /* Slightly enlarge the button */
+  }
+  
+
+  

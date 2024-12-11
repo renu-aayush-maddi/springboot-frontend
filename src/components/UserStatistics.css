@@ -1,0 +1,51 @@
+/* Container for the entire UserStatistics component */
+.user-statistics-container {
+    max-width: 10000px;
+    height: 2000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background: linear-gradient(267deg, #ff0000aa 0.36%, #002fffd3 102.06% );
+  }
+  
+  /* Header style */
+  h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Canvas wrapper */
+  canvas {
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 4px;
+  }
+  
+  /* Additional styling for chart axes */
+  canvas {
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  canvas:focus {
+    outline: none;
+  }
+  
+  /* Tooltip or hover effect styles */
+  canvas:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+  }
+
+ 
+
+
+

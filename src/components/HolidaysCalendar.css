@@ -1,0 +1,21 @@
+.festival-calendar {
+    width: 100%;
+    height: 100%;
+}
+
+.loading-spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+}
+
+.loading-spinner p {
+    margin-top: 10px;
+    color: #3498db;
+    font-size: 16px;
+}

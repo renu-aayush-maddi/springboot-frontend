@@ -1,0 +1,219 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+
+.navbar-logo a {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    position: relative;
+}
+
+.navbar-links a, .dropdown-title {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.navbar-links a:hover {
+    color: #f39c12;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #0b0101;
+    padding: 10px 0;
+    list-style: none;
+    border-radius: 4px;
+    box-shadow: 0px 4px 6px rgba(19, 1, 1, 0.2);
+    z-index: 100;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    padding: 10px 20px;
+}
+
+.dropdown-menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.dropdown-menu li a:hover {
+    color: #f39c12;
+}
+
+.btn.read-more-btn a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Button Glow Effect */
+.read-more-btn {
+    --clr: #78fd61;
+    --clr-glow: #4003e6;
+}
+
+.btn {
+    position: relative;
+    width: 155px;
+    height: 50px;
+    margin: 20px;
+    border-radius: 30px;
+}
+
+.btn a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.051);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 10;
+    color: white;
+    border-radius: 30px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: 0.5s;
+    overflow: hidden;
+    backdrop-filter: blur(15px);
+}
+
+.btn:hover a {
+    letter-spacing: 3px;
+}
+
+.btn a:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.149), transparent);
+    transform: skewX(45deg);
+    transition: 0.5s;
+}
+
+.btn:hover a:before {
+    transform: skewX(45deg) translateX(200%);
+}
+
+
+
+
+
+
+
+
+
+/* Button Glow Animations */
+.btn:before,
+.btn:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--clr-glow);
+    width: 30px;
+    height: 10px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.btn:before {
+    bottom: -5px;
+}
+
+.btn:after {
+    top: -5px;
+}
+
+.btn:hover:before,
+.btn:hover:after {
+    width: 80%;
+    height: 50%;
+    border-radius: 30px;
+}
+
+/* Custom Glow Colors for Buttons */
+.btn:nth-child(1):before,
+.btn:nth-child(1):after,
+.btn:nth-child(2):before,
+.btn:nth-child(2):after,
+.btn:nth-child(3):before,
+.btn:nth-child(3):after {
+    background: var(--clr);
+    box-shadow: 0 0 5px var(--clr), 0 0 15px var(--clr), 0 0 30px var(--clr),
+        0 0 60px var(--clr);
+}

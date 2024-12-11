@@ -1,0 +1,116 @@
+/* HomePage.css */
+
+
+
+
+.home-page {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 20px ;
+}
+
+.hero-section {
+  text-align: center;
+  background-image: url('../components/assets/bg-image.jpg'); /* Adjust path to your folder structure */
+  background-size: cover;
+  background-position: center;
+  padding: 15rem 9rem;
+  color: #fff;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #ffd700;
+}
+
+.hero-section p {
+  font-size: 1.3rem;
+  font-weight: 300;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #ffffffcc;
+}
+
+.features-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem 2rem;
+  background-color: #f9f9f9;
+}
+
+.feature {
+ /* Adjust path to your folder structure */
+  background-size: cover;
+  background-position: center;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+  color: #fff;
+  position: relative;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+}
+
+.feature h2 {
+  font-size: 1.8rem;
+  color: #f7a21e;
+  margin-bottom: 0.5rem;
+}
+
+.feature p {
+  font-size: 1rem;
+  color: #eaeaea;
+}
+
+.feature::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
+  z-index: 1;
+}
+
+.feature h2, .feature p, .learn-more {
+  position: relative;
+  z-index: 2;
+}
+
+.learn-more {
+  display: inline-block;
+  margin-top: 1.2rem;
+  padding: 0.6rem 1.2rem;
+  color: #fff;
+  background-color: #333;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.learn-more:hover {
+  background-color: #f7a21e;
+  transform: translateY(-3px);
+}
+
+
+
+
+.box:hover{
+  animation-play-state: paused;
+  
+}

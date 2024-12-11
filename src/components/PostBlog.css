@@ -1,0 +1,87 @@
+/* Container Styling */
+.post-blog-container {
+  max-width: 600px;
+  margin: 90px auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+  font-size: 2rem;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Error Message Styling */
+.error-message {
+  color: red;
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Form Styling */
+.blog-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-input:focus {
+  border-color: #2980b9;
+  outline: none;
+}
+
+/* Submit Button Styling */
+.submit-button {
+  padding: 12px;
+  font-size: 1.1rem;
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #3498db;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .post-blog-container {
+    padding: 15px;
+  }
+
+  .form-title {
+    font-size: 1.8rem;
+  }
+
+  .submit-button {
+    font-size: 1rem;
+    padding: 10px;
+  }
+}

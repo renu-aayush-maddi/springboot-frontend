@@ -1,0 +1,135 @@
+
+
+
+
+
+.box:hover{
+  animation-play-state: paused;
+  
+}
+.box {
+  position: absolute;
+  top: 35%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 300px;
+  transform-style: preserve-3d;
+  animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+  0%{
+      transform: perspective(1000px) rotateY(0deg);
+  }
+  100%{
+      transform: perspective(1000px) rotateY(360deg);
+  }
+}
+.box span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  transform: rotateY(calc(var(--i) * 45deg)) translateZ(240px);
+}
+
+.box span::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  box-shadow: inset 0 0 15px rgba(0,0,0,0.5);
+}
+
+.box span img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+.features1-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 40rem 2rem;
+  background-color: rgb(63, 0, 77);
+}
+
+.feature1 {
+ /* Adjust path to your folder structure */
+  background-size: cover;
+  background-position: center;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+  color: #fff;
+  position: relative;
+}
+
+.feature1:hover {
+  transform: translateY(-5px);
+}
+
+.feature1 h2 {
+  font-size: 1.8rem;
+  color: #f7a21e;
+  margin-bottom: 0.5rem;
+}
+
+.feature1 p {
+  font-size: 1rem;
+  color: #eaeaea;
+}
+
+.feature1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
+  z-index: 1;
+}
+
+.feature1 h2, .feature1 p, .learn-more {
+  position: relative;
+  z-index: 2;
+}
+
+.learn-more {
+  display: inline-block;
+  margin-top: 1.2rem;
+  padding: 0.6rem 1.2rem;
+  color: #fff;
+  background-color: #333;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.learn-more:hover {
+  background-color: #f7a21e;
+  transform: translateY(-3px);
+}
+
+
+
+
+.box:hover{
+  animation-play-state: paused;
+  
+}
